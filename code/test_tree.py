@@ -10,8 +10,8 @@ from sklearn.ensemble import RandomForestClassifier
 # Generate synthetic dataset
 X, y = make_classification(
     n_samples=1000,        # Number of samples
-    n_features=50,         # Number of features
-    n_informative=40,      # Number of informative features
+    n_features=3,         # Number of features
+    n_informative=2,      # Number of informative features
     n_redundant=1,          # Number of redundant features
     n_clusters_per_class=2, # Number of clusters per class
     random_state=42         # Random seed for reproducibility

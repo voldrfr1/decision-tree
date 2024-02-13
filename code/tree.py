@@ -232,8 +232,10 @@ class DecisionTree:
         best_split = self.__best_split(X)
         #if zero, we didnt achieve anything and there is no point in continuing 
         #to build the tree, we can just stop
+        #we calculate the leaf value here, because we can have heterogenous
+        #set with all attributes being the same
         if best_split['IG'] == 0:
-            return Node(class_id=X[0, -1])
+            return self.__calculate_leaf(X[:, -1])
         #otherwise set the children by recursively calling it on split dataset
         left = self.__build_tree(best_split['left_X'], current_depth + 1)
         right = self.__build_tree(best_split['right_X'], current_depth + 1)
