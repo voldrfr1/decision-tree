@@ -4,7 +4,7 @@ from sklearn.model_selection import train_test_split
 from tree import DecisionTree
 from sklearn.tree import DecisionTreeClassifier
 from sklearn.metrics import accuracy_score
-from random_forrest import RandomForrest
+from random_forest import RandomForest
 from sklearn.ensemble import RandomForestClassifier
 
 # Generate synthetic dataset

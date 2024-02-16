@@ -2,7 +2,7 @@ import numpy as np
 from tree import DecisionTree
 from tqdm import tqdm
 
-class RandomForrest:
+class RandomForest:
     def __init__(self, n_trees=5, max_depth=5, num_of_samples=2):
         """
         Initialize the Random Forest model.
